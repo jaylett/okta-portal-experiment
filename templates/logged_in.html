@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hi ho SSO</title>
+  </head>
+  <body>
+    <h1>SSO passthrough demo</h1>
+    <p>
+      Successfully authenticated against Okta.
+    </p>
+    <ul>
+      <li>Session: {{ session }}</li>
+      <li>User: {{ profile.firstName }} {{ profile.lastName }}</li>
+    </ul>
+
+    <ul>
+      <li><a href='{{ url_for('index') }}'>Home again</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+flask~=0.12.2
+flask-oauthlib~=0.9.4
+okta~=0.0.4

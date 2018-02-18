@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Hi ho SSO</title>
+  </head>
+  <body>
+    <h1>SSO passthrough demo</h1>
+    <p>
+      Without an Okta session, the <em>client app</em> should ask you for
+      authentication. If you go via <em>our login</em> first, the Okta
+      session should be available and so you shouldn't be prompted (although
+      there will be a redirect through Okta to set up the session).
+    </p>
+
+    <ul>
+      <li><a href='http://localhost:5000/'>Client app</a></li>
+      <li><a href='{{ url_for('login') }}'>Our login</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Hi ho SSO</title>
+  </head>
+  <body>
+    <h1>SSO passthrough demo</h1>
+    <p>
+      Login redirect failure: {{ error }}.
+    </p>
+    <p>
+      {{ error_description }}
+    </p>
+    <ul>
+      <li><a href='{{ url_for('index') }}'>Home again</a></li>
+    </ul>
+  </body>
+</html>
